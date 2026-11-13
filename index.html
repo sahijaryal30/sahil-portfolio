@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrap nav">
+        <a href="#" class="logo">SAHIL</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav>
+            <ul id="menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wrap">
+                <div>
+                    <p class="role">Video Editor &amp; Visual Storyteller</p>
+                    <h1>Hi, I’m Sahil Thakur.</h1>
+                    <h2>I create videos that tell stories.</h2>
+                    <p class="desc">Crafting engaging visual content through editing, motion and storytelling.</p>
+                    <a class="btn" href="#work">View my work <span class="arrow" aria-hidden="true">↗</span></a>
+                </div>
+                <div>
+                    <div class="reel" id="reel">
+                        <!-- Put your video file in the same folder as index.html and change the file name below -->
+                        <video id="reelVideo" src="assets/showreells.mp4" poster="poster.jpg" preload="metadata" playsinline controls></video>
+                        <button class="play-btn" id="playBtn" aria-label="Play showreel"><span class="play" aria-hidden="true"></span></button>
+                    </div>
+                    <div class="reel-meta"><span>Showreel 2026</span><b>01:00 min</b></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="wrap">
+                <div class="about-top"><span class="num">02 / About me</span><span class="tag">Get to know me</span></div>
+                <h2 class="about-title">A little about me</h2>
+
+                <div class="about-grid">
+                    <!-- To use your photo: replace everything inside .photo with <img src="sahil.jpg" alt="Sahil Thakur"> -->
+                    <div class="photo">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-4 3-6.5 7-6.5s7 2.5 7 6.5"/></svg>
+                        <span>Your photo / creative visual</span>
+                    </div>
+                    <div class="about-text">
+                        <h3>Hey, I’m Sahil.</h3>
+                        <p>I’m a video editor passionate about creating engaging visual content and telling stories through editing.</p>
+                        <p>I enjoy working with visuals, sound, motion and pacing to turn simple ideas into meaningful videos.</p>
+                        <a class="about-link" href="#work">My approach →</a>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <div>
+                        <h4>Editing</h4><span>Creative storytelling</span></div>
+                    <div>
+                        <h4>Motion</h4><span>Visual communication</span></div>
+                    <div>
+                        <h4>Design</h4><span>Clean aesthetics</span></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="portfolio" id="work">
+            <div class="wrap">
+                <div class="top"><span class="num">03 / Portfolio</span><span class="tag">My creative work</span></div>
+                <h2 class="work-title">Selected Work</h2>
+                <p class="sub">A collection of videos crafted with creativity and purpose.</p>
+
+                <div class="work-grid">
+                    <!-- For each card: put a thumbnail in <img src="..."> (or a <video src="..." muted loop playsinline>) and your video link in href -->
+                    <a class="project" href="#">
+                        <div class="thumb">
+                            <!-- <img src="work1.jpg" alt="Commercial Edit"> --><span class="play" aria-hidden="true"></span></div>
+                        <h4>Commercial Edit</h4><span>Video Editing</span>
+                    </a>
+                    <a class="project" href="#">
+                        <div class="thumb">
+                            <!-- <img src="work2.jpg" alt="Social Media Reel"> --><span class="play" aria-hidden="true"></span></div>
+                        <h4>Social Media Reel</h4><span>Short Form</span>
+                    </a>
+                    <a class="project" href="#">
+                        <div class="thumb">
+                            <!-- <img src="work3.jpg" alt="Storytelling"> --><span class="play" aria-hidden="true"></span></div>
+                        <h4>Storytelling</h4><span>Creative Editing</span>
+                    </a>
+                </div>
+
+                <div class="all-row">
+                    <a class="btn-outline" href="index2.html">
+    View all projects
+    <span class="arrow" aria-hidden="true">↗</span>
+</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="expertise" id="expertise">
+            <div class="wrap">
+                <div class="top"><span class="num">04 / Expertise</span><span class="tag">What I do</span></div>
+                <h2 class="exp-title">Skills &amp; Expertise</h2>
+                <p class="sub">The creative skills and tools I use to bring ideas to life.</p>
+
+                <div class="exp-block">
+                    <h3>01 — Creative skills</h3>
+                    <div class="exp-grid">
+                        <div class="skill"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 3v18M17 3v18M3 8h4M3 12h4M3 16h4M17 8h4M17 12h4M17 16h4"/></svg>
+                            <h4>Video Editing</h4><span>Pacing, cuts &amp; storytelling</span></div>
+                        <div class="skill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-1 1.6-2-.5-1.2.2-2.500 1.600-2.500H17a4 4 0 0 0 4-4C21 6.500 17 3 12 3z"/><circle cx="7.500" cy="11" r=".8"/><circle cx="10" cy="7.500" r=".8"/><circle cx="14.500" cy="7.500" r=".8"/></svg>
+                            <h4>Color Grading</h4><span>Color correction &amp; looks</span></div>
+                        <div class="skill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h1M7 8v8M11 4v16M15 7v10M19 10v4M22 12h-1"/></svg>
+                            <h4>Sound Design</h4><span>Audio &amp; sound effects</span></div>
+                        <div class="skill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14M12 5v14M9 19h6"/></svg>
+                            <h4>Motion Graphics</h4><span>Titles &amp; animations</span></div>
+                    </div>
+                </div>
+
+                <div class="exp-block">
+                    <h3>02 — Software &amp; tools</h3>
+                    <div class="exp-grid">
+                        <div class="tool"><span class="badge" style="color:#c9a7ff">Pr</span>Adobe Premiere Pro</div>
+                        <div class="tool"><span class="badge" style="color:#a9a8f5">Ae</span>Adobe After Effects</div>
+                        <div class="tool"><span class="badge" style="color:#ffffff">Cc</span>CapCut</div>
+                        <div class="tool"><span class="badge" style="color:#9fd3f7">Vn</span>VN Editor</div>
+                        <div class="tool"><span class="badge" style="color:#f2a08c">Ex</span>Adobe Express</div>
+                        <div class="tool"><span class="badge" style="color:#a99cf5">Ca</span>Canva</div>
+                        <div class="tool"><span class="badge" style="color:#8fb0f7">Ps</span>Photoshop</div>
+                        <div class="tool"><span class="badge" style="color:#a6e83a">AI</span>AI Tools</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="journey" id="journey">
+            <div class="wrap">
+                <span class="num">04 / My journey</span>
+                <h2 class="jr-title">Experience &amp; Education</h2>
+
+                <div class="jr-grid">
+                    <div class="jr-col">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>
+                        <h3>Experience</h3>
+                        <h4>Video Editor</h4>
+                        <p class="org">Celsius Education Pvt. Ltd.</p>
+                        <p class="place">Mohali, Punjab</p>
+                        <p class="date">Nov 2025 – Oct 2026</p>
+                        <p class="note">Social media videos, promotional creatives and marketing content.</p>
+                    </div>
+                    <div class="jr-col">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.500 3 3 6 3s6-1.500 6-3v-5M22 9v6"/></svg>
+                        <h3>Education</h3>
+                        <h4>Bachelor of Computer Applications</h4>
+                        <p class="org">MCM DAV College, Kangra</p>
+                        <p class="place">Himachal Pradesh</p>
+                        <p class="date">Graduated · 2025</p>
+                        <p class="note">BCA Graduate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="wrap">
+            <div class="f-row">
+                <span class="f-logo">SAHIL</span>
+                <div class="socials">
+                    <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r=".6"/></svg></a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13c0-1.500 1-2 2-2s2 .8 2 2.500V16"/></svg></a>
+                    <a href="mailto:you@example.com" aria-label="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+                </div>
+            </div>
+            <div class="f-row second">
+                <span>Video Editor &amp; Visual Storyteller</span>
+                <a href="#">Back to top ↑</a>
+            </div>
+            <div class="f-bottom">
+                <span>© 2026 Sahil Thakur. All rights reserved.</span>
+                <span>Designed with creativity.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

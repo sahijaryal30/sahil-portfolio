@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Projects – Sahil Thakur</title>
+    <style>
+         :root {
+            --bg: #111214;
+            --card: #2a2b2f;
+            --line: #2b2d31;
+            --text: #fff;
+            --muted: #9a9ca3;
+            --accent: #a6e83a;
+            --max: 1180px;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+            line-height: 1.5;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .wrap {
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* NAVBAR */
+        
+        header {
+            border-bottom: 1px solid var(--line);
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+        
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: .3px;
+        }
+        
+        .crumbs {
+            color: var(--accent);
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        .crumbs a:hover {
+            text-decoration: underline;
+        }
+        /* PAGE */
+        
+        main {
+            padding: 36px 0 72px;
+        }
+        
+        h1 {
+            font-size: clamp(26px, 3.4vw, 34px);
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .sub {
+            color: var(--muted);
+            font-size: 15px;
+            margin-bottom: 28px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 270px));
+            justify-content: space-between;
+            gap: 32px 20px;
+        }
+        
+        .thumb {
+            position: relative;
+            aspect-ratio: 9 / 16;
+            background: var(--card);
+            border-radius: 16px;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+            transition: transform .25s;
+        }
+        
+        .project:hover .thumb {
+            transform: translateY(-4px);
+        }
+        
+        .thumb img,
+        .thumb video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .play {
+            position: relative;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: grid;
+            place-items: center;
+        }
+        
+        .play::before {
+            content: "";
+            border-left: 13px solid #111;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            margin-left: 3px;
+        }
+        
+        .project h4 {
+            font-size: 16px;
+            margin-top: 12px;
+        }
+        
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+        }
+        
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        
+        @media (max-width: 560px) {
+            .grid {
+                grid-template-columns: minmax(0, 320px);
+                justify-content: center;
+            }
+            .crumbs {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="wrap nav">
+            <a href="index.html" class="logo">SAHIL</a>
+            <div class="crumbs"><a href="index.html">Home</a> / All Projects</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrap">
+            <h1>All Projects</h1>
+            <p class="sub">A complete collection of my video editing work.</p>
+
+            <div class="grid">
+                <!-- For each project: add a thumbnail in the <img> and your video link in href. Copy a block to add more. -->
+                <a class="project" href="#">
+                    <div class="thumb">
+                        <!-- <img src="project01.jpg" alt="Project 01"> --><span class="play" aria-hidden="true"></span></div>
+                    <h4>Project 01</h4>
+                </a>
+                <a class="project" href="#">
+                    <div class="thumb">
+                        <!-- <img src="project02.jpg" alt="Project 02"> --><span class="play" aria-hidden="true"></span></div>
+                    <h4>Project 02</h4>
+                </a>
+                <a class="project" href="#">
+                    <div class="thumb">
+                        <!-- <img src="project03.jpg" alt="Project 03"> --><span class="play" aria-hidden="true"></span></div>
+                    <h4>Project 03</h4>
+                </a>
+                <a class="project" href="#">
+                    <div class="thumb">
+                        <!-- <img src="project04.jpg" alt="Project 04"> --><span class="play" aria-hidden="true"></span></div>
+                    <h4>Project 04</h4>
+                </a>
+                <a class="project" href="#">
+                    <div class="thumb">
+                        <!-- <img src="project05.jpg" alt="Project 05"> --><span class="play" aria-hidden="true"></span></div>
+                    <h4>Project 05</h4>
+                </a>
+                <a class="project" href="#">
+                    <div class="thumb">
+                        <!-- <img src="project06.jpg" alt="Project 06"> --><span class="play" aria-hidden="true"></span></div>
+                    <h4>Project 06</h4>
+                </a>
+                <a class="project" href="#">
+                    <div class="thumb">
+                        <!-- <img src="project07.jpg" alt="Project 07"> --><span class="play" aria-hidden="true"></span></div>
+                    <h4>Project 07</h4>
+                </a>
+                <a class="project" href="#">
+                    <div class="thumb">
+                        <!-- <img src="project08.jpg" alt="Project 08"> --><span class="play" aria-hidden="true"></span></div>
+                    <h4>Project 08</h4>
+                </a>
+                <a class="project" href="#">
+                    <div class="thumb">
+                        <!-- <img src="project09.jpg" alt="Project 09"> --><span class="play" aria-hidden="true"></span></div>
+                    <h4>Project 09</h4>
+                </a>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
